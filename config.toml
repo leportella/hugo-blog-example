@@ -4,6 +4,8 @@ title = "My New Hugo Site"
 
 theme = "hugo-theme-codex" 
 
+disqusShortname = "my-multilanguage-blog"
+
 
 [params]
   twitter = "https://twitter.com/leportella"
