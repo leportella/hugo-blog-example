@@ -7,11 +7,39 @@ theme = "hugo-theme-codex"
 disqusShortname = "my-multilanguage-blog"
 
 
-[params]
-  twitter = "https://twitter.com/leportella"
+[languages]
+  [languages.en]
+    weight = 1
+    contentDir = "content/en"
+    languageName = "English"
+    twitter = "https://twitter.com/leportella"
+  [[languages.en.menu.main]]
+    weight = 1
+    identifier = "blog"
+    name = "blog"
+    title = "Blog"
+    url = "/blog"
+  [[languages.en.menu.main]]
+    weight = 2
+    identifier = "pt"
+    name = "🇧🇷 Pt"
+    title = "Português"
+    url = "/pt-br"
 
-[[menu.main]]
-  identifier = "blog"
-  name = "blog"
-  title = "Blog"
-  url = "/blog"
+  [languages.pt-br]
+    weight = 2
+    contentDir = "content/pt-br"
+    languageName = "Português"
+    twitter = "https://twitter.com/leportella"
+  [[languages.pt-br.menu.main]]
+    weight = 1
+    identifier = "blog"
+    name = "meu blog"
+    title = "Blog"
+    url = "/pt-br/blog"
+  [[languages.pt-br.menu.main]]
+    weight = 2
+    identifier = "en"
+    name = "🇮🇪 En"
+    title = "English"
+    url = "/"
